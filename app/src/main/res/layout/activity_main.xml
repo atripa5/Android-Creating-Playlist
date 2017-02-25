@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center_vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.abhi.cs478_project2.MainActivity">
+
+
+    <CheckBox
+        android:text="Hymn for the Weekend : Coldplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:id="@+id/Hymn"
+        android:layout_alignParentTop="true"
+        android:checked="false"
+        />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar4"
+        android:elevation="4dp"
+        android:layout_above="@+id/Perfect"
+        android:layout_marginBottom="51dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:text="In the End : Linkin Park"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/InTheEnd"
+        android:layout_below="@+id/ChannaMereya"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+
+    <CheckBox
+        android:text="Channa Mereya : Arijit Singh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ChannaMereya"
+        android:layout_below="@+id/Perfect"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <CheckBox
+        android:text="Perfect : One Direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Perfect"
+        android:layout_below="@+id/Hymn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="The Scientist : Coldplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TheScientist"
+        android:layout_below="@+id/RangDeBasanti"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="Rang De Basanti : Daler Mehndi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RangDeBasanti"
+        android:layout_below="@+id/InTheEnd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Create Playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick="FinalSelection"
+        android:layout_below="@+id/TheScientist"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+
+</RelativeLayout>
+    </ScrollView>
+
+
+
+

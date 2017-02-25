@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    tools:context="com.example.abhi.cs478_project2.MainActivity">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/create_playlist"
+        android:title="+Playlist"
+        app:showAsAction="ifRoom"/>
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/clear_all"
+        android:title="Clear all"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/invert_selection"
+        android:title="Invert Selection"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/select_all"
+        android:title="Select all"
+        app:showAsAction="never"/>
+
+
+</menu>
